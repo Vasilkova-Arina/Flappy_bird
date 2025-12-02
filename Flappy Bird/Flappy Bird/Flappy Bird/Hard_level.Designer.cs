@@ -30,6 +30,11 @@ namespace Flappy_Bird
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.pause = new System.Windows.Forms.Button();
+            this.Instruction = new System.Windows.Forms.PictureBox();
+            this.Bird_game = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Instruction)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -37,26 +42,66 @@ namespace Flappy_Bird
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(197)))), ((int)(((byte)(207)))));
             this.button1.BackgroundImage = global::Flappy_Bird.Properties.Resources.pause1;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(844, 0);
+            this.button1.Location = new System.Drawing.Point(1125, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
+            this.button1.Size = new System.Drawing.Size(53, 49);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pause
+            // 
+            this.pause.BackColor = System.Drawing.Color.Transparent;
+            this.pause.BackgroundImage = global::Flappy_Bird.Properties.Resources.pause1;
+            this.pause.Location = new System.Drawing.Point(830, 12);
+            this.pause.Name = "pause";
+            this.pause.Size = new System.Drawing.Size(40, 40);
+            this.pause.TabIndex = 6;
+            this.pause.UseVisualStyleBackColor = false;
+            // 
+            // Instruction
+            // 
+            this.Instruction.BackColor = System.Drawing.Color.Transparent;
+            this.Instruction.Image = global::Flappy_Bird.Properties.Resources.Instruction;
+            this.Instruction.Location = new System.Drawing.Point(366, 218);
+            this.Instruction.Margin = new System.Windows.Forms.Padding(4);
+            this.Instruction.Name = "Instruction";
+            this.Instruction.Size = new System.Drawing.Size(129, 134);
+            this.Instruction.TabIndex = 5;
+            this.Instruction.TabStop = false;
+            // 
+            // Bird_game
+            // 
+            this.Bird_game.BackColor = System.Drawing.Color.Transparent;
+            this.Bird_game.Image = global::Flappy_Bird.Properties.Resources.redbird_upflap;
+            this.Bird_game.Location = new System.Drawing.Point(396, 143);
+            this.Bird_game.Margin = new System.Windows.Forms.Padding(4);
+            this.Bird_game.Name = "Bird_game";
+            this.Bird_game.Size = new System.Drawing.Size(57, 52);
+            this.Bird_game.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Bird_game.TabIndex = 4;
+            this.Bird_game.TabStop = false;
+            // 
             // Hard_level
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon2;
-            this.ClientSize = new System.Drawing.Size(884, 459);
+            this.ClientSize = new System.Drawing.Size(882, 453);
+            this.Controls.Add(this.pause);
+            this.Controls.Add(this.Instruction);
+            this.Controls.Add(this.Bird_game);
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MaximumSize = new System.Drawing.Size(900, 498);
-            this.MinimumSize = new System.Drawing.Size(900, 498);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximumSize = new System.Drawing.Size(900, 500);
+            this.MinimumSize = new System.Drawing.Size(900, 500);
             this.Name = "Hard_level";
             this.Text = "Hard_level";
             this.Load += new System.EventHandler(this.Hard_level_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.Instruction)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -64,5 +109,8 @@ namespace Flappy_Bird
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button pause;
+        private System.Windows.Forms.PictureBox Instruction;
+        private System.Windows.Forms.PictureBox Bird_game;
     }
 }

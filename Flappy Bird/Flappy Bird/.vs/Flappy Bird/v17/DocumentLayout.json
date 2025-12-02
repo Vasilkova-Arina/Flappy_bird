@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\flappy bird\\flappy bird\\flappy bird\\game_over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\game_over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\flappy bird\\flappy bird\\flappy bird\\hard_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\hard_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\flappy bird\\flappy bird\\flappy bird\\medium_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\medium_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\flappy bird\\flappy bird\\flappy bird\\light_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\light_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Medium_level.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Medium_level.cs",
+              "RelativeDocumentMoniker": "Flappy Bird\\Medium_level.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Medium_level.cs [Design]",
+              "RelativeToolTip": "Flappy Bird\\Medium_level.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T16:05:21.104Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game_over.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Game_over.cs",
+              "RelativeDocumentMoniker": "Flappy Bird\\Game_over.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Game_over.cs [Design]",
+              "RelativeToolTip": "Flappy Bird\\Game_over.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T16:05:14.057Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hard_level.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Hard_level.cs",
+              "RelativeDocumentMoniker": "Flappy Bird\\Hard_level.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Hard_level.cs [Design]",
+              "RelativeToolTip": "Flappy Bird\\Hard_level.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T16:05:13.393Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Light_level.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Light_level.cs",
+              "RelativeDocumentMoniker": "Flappy Bird\\Light_level.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Light_level.cs [Design]",
+              "RelativeToolTip": "Flappy Bird\\Light_level.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T16:05:12.934Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

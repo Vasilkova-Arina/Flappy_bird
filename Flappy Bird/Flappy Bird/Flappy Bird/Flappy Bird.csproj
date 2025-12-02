@@ -188,5 +188,14 @@
   <ItemGroup>
     <None Include="Resources\Game_over.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77c9aa39-25fd-4a7b-ba6c-c438f3a3ab14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443321549047_1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
