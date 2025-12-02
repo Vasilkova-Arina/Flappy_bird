@@ -183,6 +183,16 @@ namespace Flappy_Bird.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nizch_trub {
+            get {
+                object obj = ResourceManager.GetObject("nizch_trub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pause1 {
             get {
                 object obj = ResourceManager.GetObject("pause1", resourceCulture);
@@ -236,6 +246,16 @@ namespace Flappy_Bird.Properties {
         internal static System.Drawing.Bitmap textur_gas_kvas_com_a8ke_p_teksturi_flappy_bird_11 {
             get {
                 object obj = ResourceManager.GetObject("textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vverx_trub {
+            get {
+                object obj = ResourceManager.GetObject("vverx_trub", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

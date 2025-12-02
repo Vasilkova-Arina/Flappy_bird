@@ -32,6 +32,7 @@ namespace Flappy_Bird
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Repeet = new System.Windows.Forms.PictureBox();
+            this.scoreLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Repeet)).BeginInit();
@@ -63,12 +64,23 @@ namespace Flappy_Bird
             // 
             this.Repeet.BackColor = System.Drawing.Color.Transparent;
             this.Repeet.Image = global::Flappy_Bird.Properties.Resources._1443321549047_1;
-            this.Repeet.Location = new System.Drawing.Point(129, 218);
+            this.Repeet.Location = new System.Drawing.Point(133, 249);
             this.Repeet.Name = "Repeet";
             this.Repeet.Size = new System.Drawing.Size(100, 50);
             this.Repeet.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Repeet.TabIndex = 2;
             this.Repeet.TabStop = false;
+            this.Repeet.Click += new System.EventHandler(this.Repeet_Click);
+            // 
+            // scoreLabel
+            // 
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.scoreLabel.Location = new System.Drawing.Point(171, 212);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Size = new System.Drawing.Size(11, 16);
+            this.scoreLabel.TabIndex = 3;
+            this.scoreLabel.Text = "-";
             // 
             // Game_over
             // 
@@ -76,6 +88,7 @@ namespace Flappy_Bird
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon2;
             this.ClientSize = new System.Drawing.Size(376, 311);
+            this.Controls.Add(this.scoreLabel);
             this.Controls.Add(this.Repeet);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -85,10 +98,12 @@ namespace Flappy_Bird
             this.MinimumSize = new System.Drawing.Size(394, 358);
             this.Name = "Game_over";
             this.Text = "Game_over";
+            this.Load += new System.EventHandler(this.Game_over_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Repeet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,5 +112,6 @@ namespace Flappy_Bird
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox Repeet;
+        private System.Windows.Forms.Label scoreLabel;
     }
 }

@@ -200,7 +200,9 @@
     <None Include="Resources\1443321549047_1.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\nizch_trub.png" />
     <Content Include="Resources\redbird-downflap.png" />
+    <None Include="Resources\vverx_trub.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

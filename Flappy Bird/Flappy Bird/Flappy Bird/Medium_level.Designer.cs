@@ -33,8 +33,13 @@ namespace Flappy_Bird
             this.pause = new System.Windows.Forms.Button();
             this.Instruction = new System.Windows.Forms.PictureBox();
             this.Bird_game = new System.Windows.Forms.PictureBox();
+            this.Count = new System.Windows.Forms.Label();
+            this.vverx_trub = new System.Windows.Forms.PictureBox();
+            this.nizxh_trub = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -83,12 +88,46 @@ namespace Flappy_Bird
             this.Bird_game.TabIndex = 4;
             this.Bird_game.TabStop = false;
             // 
+            // Count
+            // 
+            this.Count.AutoSize = true;
+            this.Count.BackColor = System.Drawing.Color.Transparent;
+            this.Count.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Count.ForeColor = System.Drawing.Color.White;
+            this.Count.Location = new System.Drawing.Point(12, 9);
+            this.Count.Name = "Count";
+            this.Count.Size = new System.Drawing.Size(0, 44);
+            this.Count.TabIndex = 10;
+            // 
+            // vverx_trub
+            // 
+            this.vverx_trub.BackColor = System.Drawing.Color.Transparent;
+            this.vverx_trub.Image = global::Flappy_Bird.Properties.Resources.nizch_trub;
+            this.vverx_trub.Location = new System.Drawing.Point(777, -107);
+            this.vverx_trub.Name = "vverx_trub";
+            this.vverx_trub.Size = new System.Drawing.Size(45, 237);
+            this.vverx_trub.TabIndex = 8;
+            this.vverx_trub.TabStop = false;
+            // 
+            // nizxh_trub
+            // 
+            this.nizxh_trub.BackColor = System.Drawing.Color.Transparent;
+            this.nizxh_trub.Image = global::Flappy_Bird.Properties.Resources.vverx_trub;
+            this.nizxh_trub.Location = new System.Drawing.Point(766, 298);
+            this.nizxh_trub.Name = "nizxh_trub";
+            this.nizxh_trub.Size = new System.Drawing.Size(56, 206);
+            this.nizxh_trub.TabIndex = 11;
+            this.nizxh_trub.TabStop = false;
+            // 
             // Medium_level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon2;
             this.ClientSize = new System.Drawing.Size(882, 453);
+            this.Controls.Add(this.nizxh_trub);
+            this.Controls.Add(this.Count);
+            this.Controls.Add(this.vverx_trub);
             this.Controls.Add(this.pause);
             this.Controls.Add(this.Instruction);
             this.Controls.Add(this.Bird_game);
@@ -102,7 +141,10 @@ namespace Flappy_Bird
             this.Load += new System.EventHandler(this.Medium_level_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -112,5 +154,8 @@ namespace Flappy_Bird
         private System.Windows.Forms.Button pause;
         private System.Windows.Forms.PictureBox Instruction;
         private System.Windows.Forms.PictureBox Bird_game;
+        private System.Windows.Forms.Label Count;
+        private System.Windows.Forms.PictureBox vverx_trub;
+        private System.Windows.Forms.PictureBox nizxh_trub;
     }
 }
