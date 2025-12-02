@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bird.cs" />
     <Compile Include="Complexity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +91,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Trub.cs" />
     <EmbeddedResource Include="Complexity.resx">
       <DependentUpon>Complexity.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +198,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1443321549047_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\redbird-downflap.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
