@@ -43,28 +43,39 @@ namespace Flappy_Bird
         // Сброс труб на правый край с новой случайной высотой
         public void Reset()
         {
+            // Безопасная минимальная высота
             int minHeight = 50;
-            int maxHeight = level.ClientSize.Height - (int)(1.5 * PipeGap);
+
+            // Вычисляем максимальную высоту с запасом
+            int maxHeight = level.ClientSize.Height - PipeGap - 50;
+
+            // Гарантируем, что maxHeight > minHeight
+            if (maxHeight < minHeight + 20)
+                maxHeight = minHeight + 20;
+
+            // Случайная высота верхней трубы
             int topHeight = random.Next(minHeight, maxHeight);
 
             // Устанавливаем верхнюю трубу
-            vverx_trub.SetBounds(
-                level.ClientSize.Width, // X - правый край формы
-                0,                        // Y - верх формы
-                vverx_trub.Width,            // Ширина
-                topHeight                 // Высота
-            );
+            vverx_trub.Left = level.ClientSize.Width;
+            vverx_trub.Top = 0;
+            vverx_trub.Height = topHeight;
 
             // Рассчитываем нижнюю трубу
             int bottomY = topHeight + PipeGap;
             int bottomHeight = level.ClientSize.Height - bottomY;
 
-            nizch_trub.SetBounds(
-                level.ClientSize.Width, // X - правый край формы
-                bottomY,                  // Y - под зазором от верхней трубы
-                nizch_trub.Width,         // Ширина
-                bottomHeight              // Высота
-            );
+            // Гарантируем минимальную высоту нижней трубы
+            if (bottomHeight < 50)
+            {
+                bottomHeight = 50;
+                bottomY = level.ClientSize.Height - bottomHeight;
+            }
+
+            // Устанавливаем нижнюю трубу
+            nizch_trub.Left = level.ClientSize.Width;
+            nizch_trub.Top = bottomY;
+            nizch_trub.Height = bottomHeight;
         }
 
         // Проверка столкновения птицы с трубами

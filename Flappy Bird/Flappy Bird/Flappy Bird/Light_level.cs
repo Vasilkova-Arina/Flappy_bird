@@ -298,17 +298,7 @@ namespace Flappy_Bird
             }
         }
 
-        // Метод для рисования земли
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            base.OnPaint(e);
-
-            // Рисуем землю
-            e.Graphics.FillRectangle(Brushes.Brown, 0, groundLevel,
-                                   this.ClientSize.Width, this.ClientSize.Height - groundLevel);
-            e.Graphics.FillRectangle(Brushes.Green, 0, groundLevel,
-                                   this.ClientSize.Width, 10);
-        }
+        
 
         // При изменении размера формы
         protected override void OnResize(EventArgs e)

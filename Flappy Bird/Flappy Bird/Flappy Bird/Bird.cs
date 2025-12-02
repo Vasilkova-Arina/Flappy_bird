@@ -25,25 +25,34 @@ namespace Flappy_Bird
 
         public Bird(PictureBox pictureBox, Image image1, Image image2, int groundLevel)
         {
-            string path1 = "redbird-downflap.png";
-            string path2 = "redbird-upflap.png";
-            birdImage1 = Image.FromFile(path1);
-            birdImage2 = Image.FromFile(path2);
-            bird.Image = birdImage1;
-            bird = pictureBox;
-            birdImage1 =
-            birdImage2 = image2;
-            this.groundLevel = groundLevel;
-
-            // Устанавливаем начальное изображение
-            bird.Image = birdImage1;
-
-            // Настраиваем таймер для анимации
-            animationTimer = new Timer
+            try
             {
-                Interval = 100 // Интервал смены кадров в миллисекундах
-            };
-            animationTimer.Tick += AnimationTimer_Tick;
+                //что то не нравится с картинками
+                string path1 = "redbird-downflap.png";
+                string path2 = "redbird-upflap.png";
+                birdImage1 = Image.FromFile(path1);
+                birdImage2 = Image.FromFile(path2);
+                bird = pictureBox;
+                bird.Image = birdImage1;
+
+                birdImage1 = image1;
+                birdImage2 = image2;
+                this.groundLevel = groundLevel;
+
+                // Устанавливаем начальное изображение
+                bird.Image = birdImage1;
+
+                // Настраиваем таймер для анимации
+                animationTimer = new Timer
+                {
+                    Interval = 100 // Интервал смены кадров в миллисекундах
+                };
+                animationTimer.Tick += AnimationTimer_Tick;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка" + ex.Message);
+            }
         }
 
         // Метод для начала анимации
