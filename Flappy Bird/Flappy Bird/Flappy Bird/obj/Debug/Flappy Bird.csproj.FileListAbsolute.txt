@@ -1,0 +1,15 @@
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\bin\Debug\Flappy Bird.exe.config
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\bin\Debug\Flappy Bird.exe
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\bin\Debug\Flappy Bird.pdb
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.csproj.AssemblyReference.cache
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy_Bird.Properties.Resources.resources
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.csproj.GenerateResource.cache
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.csproj.CoreCompileInputs.cache
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.exe
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.pdb
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy_Bird.Main.resources
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy_Bird.Complexity.resources
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy_Bird.Light_level.resources
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy_Bird.Pause.resources
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy_Bird.Hard_level.resources
+C:\Users\student247\source\repos\Flappy Bird\Flappy Bird\obj\Debug\Flappy_Bird.Medium_level.resources

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{600C9317-17BF-4570-A9CD-F02067C35394}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Flappy_Bird</RootNamespace>
+    <AssemblyName>Flappy Bird</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Complexity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Complexity.Designer.cs">
+      <DependentUpon>Complexity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game_over.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game_over.Designer.cs">
+      <DependentUpon>Game_over.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hard_level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hard_level.Designer.cs">
+      <DependentUpon>Hard_level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Light_level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light_level.Designer.cs">
+      <DependentUpon>Light_level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medium_level.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medium_level.Designer.cs">
+      <DependentUpon>Medium_level.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pause.Designer.cs">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Complexity.resx">
+      <DependentUpon>Complexity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game_over.resx">
+      <DependentUpon>Game_over.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hard_level.resx">
+      <DependentUpon>Hard_level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Light_level.resx">
+      <DependentUpon>Light_level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medium_level.resx">
+      <DependentUpon>Medium_level.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pause.resx">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon menu-no-bg-preview %28carve.photos%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paus_and_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fon2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Repeet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redbird-upflap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instruction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Game_over.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
