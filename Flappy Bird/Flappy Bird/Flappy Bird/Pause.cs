@@ -24,14 +24,12 @@ namespace Flappy_Bird
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Разобраться почему не работает так какк нужно!!!!!!
-            //Complexity Comp = new Complexity();
-            //this.Close();
-            //Comp.ShowDialog();
+            this.DialogResult = DialogResult.Abort;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK; 
             this.Close();
         }
     }

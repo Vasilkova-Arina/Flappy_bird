@@ -36,25 +36,15 @@ namespace Flappy_Bird
             this.Count = new System.Windows.Forms.Label();
             this.vverx_trub = new System.Windows.Forms.PictureBox();
             this.nizxh_trub = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(197)))), ((int)(((byte)(207)))));
-            this.button1.BackgroundImage = global::Flappy_Bird.Properties.Resources.pause1;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(1125, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 49);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
+            
             // pause
             // 
             this.pause.BackColor = System.Drawing.Color.Transparent;
@@ -64,6 +54,7 @@ namespace Flappy_Bird
             this.pause.Size = new System.Drawing.Size(40, 40);
             this.pause.TabIndex = 6;
             this.pause.UseVisualStyleBackColor = false;
+            this.pause.Click += new System.EventHandler(this.pause_Click);
             // 
             // Instruction
             // 
@@ -96,7 +87,7 @@ namespace Flappy_Bird
             this.Count.ForeColor = System.Drawing.Color.White;
             this.Count.Location = new System.Drawing.Point(12, 8);
             this.Count.Name = "Count";
-            this.Count.Size = new System.Drawing.Size(0, 44);
+            this.Count.Size = new System.Drawing.Size(0, 43);
             this.Count.TabIndex = 10;
             // 
             // vverx_trub
@@ -119,12 +110,25 @@ namespace Flappy_Bird
             this.nizxh_trub.TabIndex = 11;
             this.nizxh_trub.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Flappy_Bird.Properties.Resources.Zemlya;
+            this.pictureBox1.Location = new System.Drawing.Point(-70, 451);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1069, 113);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // Hard_level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon2;
-            this.ClientSize = new System.Drawing.Size(882, 453);
+            this.ClientSize = new System.Drawing.Size(882, 503);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nizxh_trub);
             this.Controls.Add(this.Count);
             this.Controls.Add(this.vverx_trub);
@@ -134,8 +138,8 @@ namespace Flappy_Bird
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(900, 500);
-            this.MinimumSize = new System.Drawing.Size(900, 500);
+            this.MaximumSize = new System.Drawing.Size(900, 550);
+            this.MinimumSize = new System.Drawing.Size(900, 550);
             this.Name = "Hard_level";
             this.Text = "Hard_level";
             this.Load += new System.EventHandler(this.Hard_level_Load);
@@ -143,6 +147,7 @@ namespace Flappy_Bird
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,5 +162,6 @@ namespace Flappy_Bird
         private System.Windows.Forms.Label Count;
         private System.Windows.Forms.PictureBox vverx_trub;
         private System.Windows.Forms.PictureBox nizxh_trub;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -29,12 +29,33 @@ namespace Flappy_Bird
         {
             // Счет
             scoreLabel.Text = $"Ваш счет: {finalScore}";
+
+            this.FormClosing += Game_over_FormClosing;
                
+        }
+
+        private void Game_over_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // Если пользователь закрыл форму крестиком
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                // Устанавливаем DialogResult для обработки в основной форме
+                if (this.DialogResult == DialogResult.None)
+                {
+                    this.DialogResult = DialogResult.Abort; 
+                    //this.Close();
+                }
+            }
         }
 
         private void Repeet_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Abort;
+            DialogResult = DialogResult.Retry;
+        }
+
+        private void scoreLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,21 +31,22 @@ namespace Flappy_Bird
         {
             Light_level light = new Light_level();
             this.Hide();
-            light.ShowDialog();
+            light.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Medium_level medium = new Medium_level();
             this.Hide();
-            medium.ShowDialog();
+            medium.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Hard_level hard = new Hard_level();
             this.Hide();
-            hard.ShowDialog();
+            hard.Show();
         }
     }
 }

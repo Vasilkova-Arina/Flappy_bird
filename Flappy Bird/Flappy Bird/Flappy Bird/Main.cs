@@ -27,7 +27,8 @@ namespace Flappy_Bird
         {
             Complexity Comp = new Complexity();
             this.Hide();
-            Comp.ShowDialog();
+            Comp.Show();
+            
         }
 
         private void Exit_button_Click(object sender, EventArgs e)

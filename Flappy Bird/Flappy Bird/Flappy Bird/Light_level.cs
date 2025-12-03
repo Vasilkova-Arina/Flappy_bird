@@ -156,7 +156,7 @@ namespace Flappy_Bird
         private void InitializePipes()
         {
             // СОЗДАЕМ ТРУБЫ
-            pipes = new Trub(vverx_trub, nizxh_trub, this);
+            pipes = new Trub(vverx_trub, nizxh_trub, this, Trub.DifficultyLevel.Easy);
             pipes.Reset_Trub();
         }
 
@@ -198,18 +198,21 @@ namespace Flappy_Bird
         private void ShowGameOverForm()
         {
             Game_over gameover = new Game_over(score);
-            gameover.ShowDialog();
+            var result = gameover.ShowDialog();
 
             // Проверяем результат (переиграть или выйти)
-            if (gameover.DialogResult == DialogResult.Retry)
+            if (result == DialogResult.Retry)
             {
                 // Начать заново
                 StartGame();
             }
-            else if (gameover.DialogResult == DialogResult.Abort)
+            else if (result == DialogResult.Abort || result == DialogResult.Cancel)
             {
                 // Выход в меню
-                this.Close();
+                this.Close(); 
+
+                Main main = new Main();
+                main.Show();
             }
         }
 
@@ -270,54 +273,39 @@ namespace Flappy_Bird
 
         private void ShowPauseForm()
         {
-            // Ставим игру на паузу
+            if (!gameStarted) return;
+
+            // Ставим на паузу
             Pause_game = true;
             gameTimer.Stop();
-            //bird.StopAnimation();
 
-            Pause pauseform = new Pause();
-            pauseform.ShowDialog();
+            // Показываем форму паузы
+            Pause pauseForm = new Pause();
+            DialogResult result = pauseForm.ShowDialog(); // Получаем результат
 
-            //// Проверяем результат
-            //if (pauseform.DialogResult == DialogResult.OK)
-            //{
-            //    // Продолжаем игру
-            //    Pause_game = false;
-            //    gameTimer.Start();
-            //    //bird.StartAnimation();
-            //}
-            //else if (pauseform.DialogResult == DialogResult.Abort)
-            //{
-            //    // Выход из игры
-            //    this.Close();
-            //}
+            // Обрабатываем результат
+            if (result == DialogResult.OK)
+            {
+                // Пользователь выбрал "Продолжить"
+                Pause_game = false;
+                gameTimer.Start();
+            }
+            else if (result == DialogResult.Abort)
+            {
+                // Выход в меню
+                this.Close();
+
+                Main main = new Main();
+                main.Show();
+            }
+            else
+            {
+                // Форма закрыта другим способом
+                // Можно остаться на паузе или закрыть игру
+                this.Close();
+            }
         }
 
-
-
-
-
-        // Закрытие формы при нажатии Escape
-        //protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        //{
-        //    if (keyData == Keys.Escape)
-        //    {
-        //        // Нажали Escape - показываем паузу
-        //        if (gameStarted && gameRunning)
-        //        {
-        //            Pause pauseform = new Pause();
-        //            pauseform.ShowDialog();
-        //            return true;
-        //        }
-        //    }
-        //    return base.ProcessCmdKey(ref msg, keyData);
-        //}
-
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-        //    Pause pause = new Pause();
-        //    pause.ShowDialog();
-        //}
 
         private void pause_Click(object sender, EventArgs e)
         {
@@ -325,8 +313,6 @@ namespace Flappy_Bird
 
             // Показываем форму паузы
             ShowPauseForm();
-            //Pause pause = new Pause();
-            //pause.ShowDialog();
         }
     }
 }

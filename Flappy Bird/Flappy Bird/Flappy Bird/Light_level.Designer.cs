@@ -35,10 +35,12 @@ namespace Flappy_Bird
             this.vverx_trub = new System.Windows.Forms.PictureBox();
             this.nizxh_trub = new System.Windows.Forms.PictureBox();
             this.Count = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Bird_game
@@ -89,7 +91,7 @@ namespace Flappy_Bird
             // 
             this.nizxh_trub.BackColor = System.Drawing.Color.Transparent;
             this.nizxh_trub.Image = global::Flappy_Bird.Properties.Resources.vverx_trub;
-            this.nizxh_trub.Location = new System.Drawing.Point(674, 274);
+            this.nizxh_trub.Location = new System.Drawing.Point(684, 310);
             this.nizxh_trub.Name = "nizxh_trub";
             this.nizxh_trub.Size = new System.Drawing.Size(59, 206);
             this.nizxh_trub.TabIndex = 5;
@@ -106,12 +108,25 @@ namespace Flappy_Bird
             this.Count.Size = new System.Drawing.Size(0, 43);
             this.Count.TabIndex = 7;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Image = global::Flappy_Bird.Properties.Resources.Zemlya;
+            this.pictureBox1.Location = new System.Drawing.Point(-79, 448);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1124, 113);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // Light_level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon1;
-            this.ClientSize = new System.Drawing.Size(882, 453);
+            this.ClientSize = new System.Drawing.Size(882, 503);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Count);
             this.Controls.Add(this.nizxh_trub);
             this.Controls.Add(this.vverx_trub);
@@ -120,8 +135,8 @@ namespace Flappy_Bird
             this.Controls.Add(this.Bird_game);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(900, 500);
-            this.MinimumSize = new System.Drawing.Size(900, 500);
+            this.MaximumSize = new System.Drawing.Size(900, 550);
+            this.MinimumSize = new System.Drawing.Size(900, 550);
             this.Name = "Light_level";
             this.Text = "Легкий уровень";
             this.Load += new System.EventHandler(this.Light_level_Load);
@@ -129,6 +144,7 @@ namespace Flappy_Bird
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,5 +157,6 @@ namespace Flappy_Bird
         private System.Windows.Forms.PictureBox vverx_trub;
         private System.Windows.Forms.PictureBox nizxh_trub;
         private System.Windows.Forms.Label Count;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -45,7 +45,7 @@ namespace Flappy_Bird
             this.pictureBox1.Location = new System.Drawing.Point(90, 23);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 54);
+            this.pictureBox1.Size = new System.Drawing.Size(273, 54);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -76,11 +76,13 @@ namespace Flappy_Bird
             // 
             this.scoreLabel.AutoSize = true;
             this.scoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.scoreLabel.Location = new System.Drawing.Point(171, 212);
+            this.scoreLabel.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scoreLabel.Location = new System.Drawing.Point(108, 212);
             this.scoreLabel.Name = "scoreLabel";
-            this.scoreLabel.Size = new System.Drawing.Size(11, 16);
+            this.scoreLabel.Size = new System.Drawing.Size(23, 23);
             this.scoreLabel.TabIndex = 3;
             this.scoreLabel.Text = "-";
+            this.scoreLabel.Click += new System.EventHandler(this.scoreLabel_Click);
             // 
             // Game_over
             // 

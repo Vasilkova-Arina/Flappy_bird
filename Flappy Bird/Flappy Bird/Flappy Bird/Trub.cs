@@ -16,22 +16,53 @@ namespace Flappy_Bird
         private readonly Random random = new Random();
 
         // Константы для настройки труб
-        private const int PipeSpeed = 5; //Скорость труб
-        private const int PipeGap = 250; //Растояние между верхней и нижней трубой
+        private int pipeSpeed; //Скорость труб
+        private int pipeGap; //Растояние между верхней и нижней трубой
 
-        public Trub(PictureBox top, PictureBox bottom, Form form)
+        // Перечисление для уровней сложности
+        public enum DifficultyLevel
+        {
+            Easy,
+            Medium,
+            Hard
+        }
+
+        private readonly DifficultyLevel difficulty;
+
+        public Trub(PictureBox top, PictureBox bottom, Form form, DifficultyLevel difficulty = DifficultyLevel.Easy)
         {
             vverx_trub = top;
             nizxh_trub = bottom;
-
             level = form;
+            this.difficulty = difficulty;
+
+            SetDifficultyParameters();
+        }
+
+        private void SetDifficultyParameters()
+        {
+            switch (difficulty)
+            {
+                case DifficultyLevel.Easy:
+                    pipeSpeed = 5;      // Медленная скорость
+                    pipeGap = 250;      // Большой промежуток
+                    break;
+                case DifficultyLevel.Medium:
+                    pipeSpeed = 7;      // Средняя скорость
+                    pipeGap = 220;      // Средний промежуток
+                    break;
+                case DifficultyLevel.Hard:
+                    pipeSpeed = 9;      // Высокая скорость
+                    pipeGap = 190;      // Маленький промежуток
+                    break;
+            }
         }
 
         // Движение труб влево
         public void Move()
         {
-            vverx_trub.Left -= PipeSpeed;
-            nizxh_trub.Left -= PipeSpeed;
+            vverx_trub.Left -= pipeSpeed;
+            nizxh_trub.Left -= pipeSpeed;
         }
 
         // Проверка, ушли ли трубы за левый край экрана
@@ -54,7 +85,7 @@ namespace Flappy_Bird
 
                 // Минимальная и максимальная высота
                 int minHeight = 50;
-                int maxHeight = level.ClientSize.Height - (int)(1.5 * PipeGap);
+                int maxHeight = level.ClientSize.Height - (int)(1.5 * pipeGap);
 
                 // Корректируем если нужно
                 if (maxHeight < minHeight + 10)
@@ -78,7 +109,7 @@ namespace Flappy_Bird
                 vverx_trub.BackColor = Color.Green;
 
                 // Рассчитываем нижнюю трубу
-                int bottomY = topHeight + PipeGap;
+                int bottomY = topHeight + pipeGap;
                 int bottomHeight = level.ClientSize.Height - bottomY;
 
                 // Гарантируем минимальную высоту
