@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Flappy_Bird
 {
@@ -51,8 +50,6 @@ namespace Flappy_Bird
             // Определяем уровень земли
             groundLevel = this.ClientSize.Height - 5;
 
-
-
             // Инициализируем птицу
             InitializeBird();
 
@@ -61,7 +58,7 @@ namespace Flappy_Bird
 
             // Настраиваем игровой таймер
             gameTimer = new Timer();
-            gameTimer.Interval = 10; // 50 кадров в секунду
+            gameTimer.Interval = 30; // 30 кадров в секунду
             gameTimer.Tick += GameTimer_Tick;
 
             // Настраиваем управление - клики мыши
@@ -80,6 +77,36 @@ namespace Flappy_Bird
             {
                 pause.Click += pause_Click;
             }
+        }
+
+        //метод - обработка клавиш
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            // Пробел - прыжок
+            if (keyData == Keys.Space)
+            {
+                if (!gameStarted)
+                {
+                    StartGame();
+                }
+                else if (gameRunning && !Pause_game)
+                {
+                    bird.Jump();
+                }
+                return true; // Клавиша обработана
+            }
+
+            // ESC - пауза
+            if (keyData == Keys.Escape)
+            {
+                if (gameStarted && gameRunning)
+                {
+                    ShowPauseForm();
+                }
+                return true; // Клавиша обработана
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
         private void InitializeBird()
@@ -297,12 +324,6 @@ namespace Flappy_Bird
 
                 Main main = new Main();
                 main.Show();
-            }
-            else
-            {
-                // Форма закрыта другим способом
-                // Можно остаться на паузе или закрыть игру
-                this.Close();
             }
         }
 

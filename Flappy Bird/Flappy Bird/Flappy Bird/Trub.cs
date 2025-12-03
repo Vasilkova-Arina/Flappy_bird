@@ -44,16 +44,16 @@ namespace Flappy_Bird
             switch (difficulty)
             {
                 case DifficultyLevel.Easy:
-                    pipeSpeed = 5;      // Медленная скорость
+                    pipeSpeed = 10;      // Медленная скорость
                     pipeGap = 250;      // Большой промежуток
                     break;
                 case DifficultyLevel.Medium:
-                    pipeSpeed = 7;      // Средняя скорость
-                    pipeGap = 220;      // Средний промежуток
+                    pipeSpeed = 20;      // Средняя скорость
+                    pipeGap = 200;      // Средний промежуток
                     break;
                 case DifficultyLevel.Hard:
-                    pipeSpeed = 9;      // Высокая скорость
-                    pipeGap = 190;      // Маленький промежуток
+                    pipeSpeed = 30;      // Высокая скорость
+                    pipeGap = 180;      // Маленький промежуток
                     break;
             }
         }
@@ -94,8 +94,6 @@ namespace Flappy_Bird
                 // Случайная высота верхней трубы
                 int topHeight = random.Next(minHeight, maxHeight);
 
-                Console.WriteLine($"Создаем трубы. Высота экрана: {level.ClientSize.Height}, " +
-                                 $"Верхняя труба: {topHeight}px");
 
                 // Устанавливаем верхнюю трубу
                 vverx_trub.SetBounds(
@@ -130,11 +128,11 @@ namespace Flappy_Bird
                 nizxh_trub.Visible = true;
                 nizxh_trub.BackColor = Color.Green;
 
-                Console.WriteLine($"Нижняя труба: Y={bottomY}, Высота={bottomHeight}");
+                
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Ошибка в Reset труб: {ex.Message}");
+                MessageBox.Show($"Ошибка в Reset труб: {ex.Message}");
             }
         }
 

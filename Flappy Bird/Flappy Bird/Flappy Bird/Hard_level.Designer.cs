@@ -29,7 +29,6 @@ namespace Flappy_Bird
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.pause = new System.Windows.Forms.Button();
             this.Instruction = new System.Windows.Forms.PictureBox();
             this.Bird_game = new System.Windows.Forms.PictureBox();
@@ -44,7 +43,6 @@ namespace Flappy_Bird
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            
             // pause
             // 
             this.pause.BackColor = System.Drawing.Color.Transparent;
@@ -135,7 +133,6 @@ namespace Flappy_Bird
             this.Controls.Add(this.pause);
             this.Controls.Add(this.Instruction);
             this.Controls.Add(this.Bird_game);
-            this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(900, 550);
@@ -154,8 +151,6 @@ namespace Flappy_Bird
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button pause;
         private System.Windows.Forms.PictureBox Instruction;
         private System.Windows.Forms.PictureBox Bird_game;
