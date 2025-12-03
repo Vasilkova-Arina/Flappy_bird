@@ -73,12 +73,13 @@ namespace Flappy_Bird
             this.pause.Size = new System.Drawing.Size(40, 40);
             this.pause.TabIndex = 3;
             this.pause.UseVisualStyleBackColor = false;
+            this.pause.Click += new System.EventHandler(this.pause_Click);
             // 
             // vverx_trub
             // 
             this.vverx_trub.BackColor = System.Drawing.Color.Transparent;
             this.vverx_trub.Image = global::Flappy_Bird.Properties.Resources.nizch_trub;
-            this.vverx_trub.Location = new System.Drawing.Point(777, -104);
+            this.vverx_trub.Location = new System.Drawing.Point(560, -140);
             this.vverx_trub.Name = "vverx_trub";
             this.vverx_trub.Size = new System.Drawing.Size(45, 237);
             this.vverx_trub.TabIndex = 4;
@@ -88,9 +89,9 @@ namespace Flappy_Bird
             // 
             this.nizxh_trub.BackColor = System.Drawing.Color.Transparent;
             this.nizxh_trub.Image = global::Flappy_Bird.Properties.Resources.vverx_trub;
-            this.nizxh_trub.Location = new System.Drawing.Point(777, 334);
+            this.nizxh_trub.Location = new System.Drawing.Point(674, 274);
             this.nizxh_trub.Name = "nizxh_trub";
-            this.nizxh_trub.Size = new System.Drawing.Size(56, 206);
+            this.nizxh_trub.Size = new System.Drawing.Size(59, 206);
             this.nizxh_trub.TabIndex = 5;
             this.nizxh_trub.TabStop = false;
             // 
@@ -102,7 +103,7 @@ namespace Flappy_Bird
             this.Count.ForeColor = System.Drawing.Color.White;
             this.Count.Location = new System.Drawing.Point(12, 3);
             this.Count.Name = "Count";
-            this.Count.Size = new System.Drawing.Size(0, 44);
+            this.Count.Size = new System.Drawing.Size(0, 43);
             this.Count.TabIndex = 7;
             // 
             // Light_level

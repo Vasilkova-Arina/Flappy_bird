@@ -11,7 +11,7 @@ namespace Flappy_Bird
     internal class Trub
     {
         private readonly PictureBox vverx_trub;
-        private readonly PictureBox nizch_trub;
+        private readonly PictureBox nizxh_trub;
         private readonly Form level;
         private readonly Random random = new Random();
 
@@ -22,7 +22,7 @@ namespace Flappy_Bird
         public Trub(PictureBox top, PictureBox bottom, Form form)
         {
             vverx_trub = top;
-            nizch_trub = bottom;
+            nizxh_trub = bottom;
 
             level = form;
         }
@@ -31,7 +31,7 @@ namespace Flappy_Bird
         public void Move()
         {
             vverx_trub.Left -= PipeSpeed;
-            nizch_trub.Left -= PipeSpeed;
+            nizxh_trub.Left -= PipeSpeed;
         }
 
         // Проверка, ушли ли трубы за левый край экрана
@@ -41,48 +41,77 @@ namespace Flappy_Bird
         }
 
         // Сброс труб на правый край с новой случайной высотой
-        public void Reset()
+        public void Reset_Trub()
         {
-            // Безопасная минимальная высота
-            int minHeight = 50;
-
-            // Вычисляем максимальную высоту с запасом
-            int maxHeight = level.ClientSize.Height - PipeGap - 50;
-
-            // Гарантируем, что maxHeight > minHeight
-            if (maxHeight < minHeight + 20)
-                maxHeight = minHeight + 20;
-
-            // Случайная высота верхней трубы
-            int topHeight = random.Next(minHeight, maxHeight);
-
-            // Устанавливаем верхнюю трубу
-            vverx_trub.Left = level.ClientSize.Width;
-            vverx_trub.Top = 0;
-            vverx_trub.Height = topHeight;
-
-            // Рассчитываем нижнюю трубу
-            int bottomY = topHeight + PipeGap;
-            int bottomHeight = level.ClientSize.Height - bottomY;
-
-            // Гарантируем минимальную высоту нижней трубы
-            if (bottomHeight < 50)
+            try
             {
-                bottomHeight = 50;
-                bottomY = level.ClientSize.Height - bottomHeight;
-            }
+                // Проверяем контролы
+                if (vverx_trub == null || nizxh_trub == null || level == null)
+                {
+                    Console.WriteLine("Ошибка: один из элементов труб равен null");
+                    return;
+                }
 
-            // Устанавливаем нижнюю трубу
-            nizch_trub.Left = level.ClientSize.Width;
-            nizch_trub.Top = bottomY;
-            nizch_trub.Height = bottomHeight;
+                // Минимальная и максимальная высота
+                int minHeight = 50;
+                int maxHeight = level.ClientSize.Height - (int)(1.5 * PipeGap);
+
+                // Корректируем если нужно
+                if (maxHeight < minHeight + 10)
+                    maxHeight = minHeight + 100;
+
+                // Случайная высота верхней трубы
+                int topHeight = random.Next(minHeight, maxHeight);
+
+                Console.WriteLine($"Создаем трубы. Высота экрана: {level.ClientSize.Height}, " +
+                                 $"Верхняя труба: {topHeight}px");
+
+                // Устанавливаем верхнюю трубу
+                vverx_trub.SetBounds(
+                    level.ClientSize.Width, // X - правый край
+                    0,                      // Y - верх
+                    vverx_trub.Width,       // Ширина
+                    topHeight               // Высота
+                );
+
+                vverx_trub.Visible = true;
+                vverx_trub.BackColor = Color.Green;
+
+                // Рассчитываем нижнюю трубу
+                int bottomY = topHeight + PipeGap;
+                int bottomHeight = level.ClientSize.Height - bottomY;
+
+                // Гарантируем минимальную высоту
+                if (bottomHeight < 50)
+                {
+                    bottomHeight = 50;
+                    bottomY = level.ClientSize.Height - bottomHeight;
+                }
+
+                // Устанавливаем нижнюю трубу
+                nizxh_trub.SetBounds(
+                    level.ClientSize.Width, // X - правый край
+                    bottomY,                // Y
+                    nizxh_trub.Width,       // Ширина
+                    bottomHeight            // Высота
+                );
+
+                nizxh_trub.Visible = true;
+                nizxh_trub.BackColor = Color.Green;
+
+                Console.WriteLine($"Нижняя труба: Y={bottomY}, Высота={bottomHeight}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка в Reset труб: {ex.Message}");
+            }
         }
 
         // Проверка столкновения птицы с трубами
         public bool CheckCollision(Rectangle bird)
         {
             return bird.IntersectsWith(vverx_trub.Bounds) ||
-                   bird.IntersectsWith(nizch_trub.Bounds);
+                   bird.IntersectsWith(nizxh_trub.Bounds);
         }
     }
 }

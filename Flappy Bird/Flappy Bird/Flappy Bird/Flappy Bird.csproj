@@ -201,8 +201,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nizch_trub.png" />
-    <Content Include="Resources\redbird-downflap.png" />
     <None Include="Resources\vverx_trub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\bird_vverx.png" />
+    <Content Include="Resources\redbird-downflap.png" />
+    <Content Include="Resources\redbird_down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

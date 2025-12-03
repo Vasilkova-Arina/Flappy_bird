@@ -29,6 +29,15 @@ namespace Flappy_Bird
         public Light_level()
         {
             InitializeComponent();
+            this.Focus();
+            this.KeyPreview = true;
+
+            this.MouseClick += LevelForm_MouseClick;
+
+            // Устанавливаем, чтобы форма могла получать фокус
+            this.SetStyle(ControlStyles.Selectable, true);
+            this.TabStop = true;
+
             InitializeGame();
         }
 
@@ -40,7 +49,7 @@ namespace Flappy_Bird
         private void InitializeGame()
         {
             // Определяем уровень земли
-            groundLevel = this.ClientSize.Height - 100;
+            groundLevel = this.ClientSize.Height - 5;
 
 
 
@@ -52,7 +61,7 @@ namespace Flappy_Bird
 
             // Настраиваем игровой таймер
             gameTimer = new Timer();
-            gameTimer.Interval = 20; // 50 кадров в секунду
+            gameTimer.Interval = 10; // 50 кадров в секунду
             gameTimer.Tick += GameTimer_Tick;
 
             // Настраиваем управление - клики мыши
@@ -69,7 +78,7 @@ namespace Flappy_Bird
             // Настраиваем кнопку паузы
             if (pause != null)
             {
-                pause.Click += PauseButton_Click;
+                pause.Click += pause_Click;
             }
         }
 
@@ -148,7 +157,7 @@ namespace Flappy_Bird
         {
             // СОЗДАЕМ ТРУБЫ
             pipes = new Trub(vverx_trub, nizxh_trub, this);
-            pipes.Reset();
+            pipes.Reset_Trub();
         }
 
         private void StartGame()
@@ -167,10 +176,10 @@ namespace Flappy_Bird
 
             // Сбрасываем птицу
             bird.Reset(150, this.ClientSize.Height / 2);
-            bird.StartAnimation();
+            //bird.StartAnimation();
 
             // Сбрасываем трубы
-            pipes.Reset();
+            pipes.Reset_Trub();
 
             // Запускаем игровой таймер
             gameTimer.Start();
@@ -217,7 +226,7 @@ namespace Flappy_Bird
             // Проверяем, ушли ли трубы за экран
             if (pipes.IsOutOfScreen())
             {
-                pipes.Reset();
+                pipes.Reset_Trub();
                 score++;
 
                 // Обновляем счет
@@ -259,82 +268,65 @@ namespace Flappy_Bird
             }
         }
 
-        // КНОПКА ПАУЗЫ
-        private void PauseButton_Click(object sender, EventArgs e)
-        {
-            if (!gameStarted) return; // Игра еще не началась
-
-            // Показываем форму паузы
-            ShowPauseForm();
-        }
-
         private void ShowPauseForm()
         {
             // Ставим игру на паузу
             Pause_game = true;
             gameTimer.Stop();
-            bird.StopAnimation();
+            //bird.StopAnimation();
 
             Pause pauseform = new Pause();
             pauseform.ShowDialog();
 
-            // Проверяем результат
-            if (pauseform.DialogResult == DialogResult.OK)
-            {
-                // Продолжаем игру
-                Pause_game = false;
-                gameTimer.Start();
-                bird.StartAnimation();
-            }
-            else if (pauseform.DialogResult == DialogResult.Abort)
-            {
-                // Выход из игры
-                this.Close();
-            }
-            else
-            {
-                // Пользователь просто закрыл окно - остаемся на паузе
-                // Кнопка "Продолжить" на форме позволит продолжить
-            }
+            //// Проверяем результат
+            //if (pauseform.DialogResult == DialogResult.OK)
+            //{
+            //    // Продолжаем игру
+            //    Pause_game = false;
+            //    gameTimer.Start();
+            //    //bird.StartAnimation();
+            //}
+            //else if (pauseform.DialogResult == DialogResult.Abort)
+            //{
+            //    // Выход из игры
+            //    this.Close();
+            //}
         }
 
-        
 
-        // При изменении размера формы
-        protected override void OnResize(EventArgs e)
-        {
-            base.OnResize(e);
 
-            // Обновляем уровень земли
-            groundLevel = this.ClientSize.Height - 100;
 
-            // Обновляем птицу
-            if (bird != null)
-                bird.SetGroundLevel(groundLevel);
-
-            // Перерисовываем
-            this.Invalidate();
-        }
 
         // Закрытие формы при нажатии Escape
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            if (keyData == Keys.Escape)
-            {
-                // Нажали Escape - показываем паузу
-                if (gameStarted && gameRunning)
-                {
-                    ShowPauseForm();
-                    return true;
-                }
-            }
-            return base.ProcessCmdKey(ref msg, keyData);
-        }
+        //protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        //{
+        //    if (keyData == Keys.Escape)
+        //    {
+        //        // Нажали Escape - показываем паузу
+        //        if (gameStarted && gameRunning)
+        //        {
+        //            Pause pauseform = new Pause();
+        //            pauseform.ShowDialog();
+        //            return true;
+        //        }
+        //    }
+        //    return base.ProcessCmdKey(ref msg, keyData);
+        //}
 
-        private void button1_Click(object sender, EventArgs e)
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    Pause pause = new Pause();
+        //    pause.ShowDialog();
+        //}
+
+        private void pause_Click(object sender, EventArgs e)
         {
-            Pause pause = new Pause();
-            pause.ShowDialog();
+            if (!gameStarted) return; // Игра еще не началась
+
+            // Показываем форму паузы
+            ShowPauseForm();
+            //Pause pause = new Pause();
+            //pause.ShowDialog();
         }
     }
 }

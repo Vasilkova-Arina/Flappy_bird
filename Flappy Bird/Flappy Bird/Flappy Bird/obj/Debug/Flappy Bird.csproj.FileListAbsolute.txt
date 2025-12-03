@@ -29,3 +29,4 @@ C:\Users\ASUS\OneDrive\Рабочий стол\Flappy Bird\Flappy Bird\Flappy Bi
 C:\Users\ASUS\OneDrive\Рабочий стол\Flappy Bird\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\OneDrive\Рабочий стол\Flappy Bird\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.exe
 C:\Users\ASUS\OneDrive\Рабочий стол\Flappy Bird\Flappy Bird\Flappy Bird\obj\Debug\Flappy Bird.pdb
+C:\Users\ASUS\OneDrive\Рабочий стол\Flappy Bird\Flappy Bird\Flappy Bird\bin\Debug\Resources\redbird_down.png

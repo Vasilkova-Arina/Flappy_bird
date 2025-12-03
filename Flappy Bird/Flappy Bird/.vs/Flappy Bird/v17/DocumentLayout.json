@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\flappy bird\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\flappy bird\\flappy bird\\flappy bird\\light_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\flappy bird\\light_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\light_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,16 +11,20 @@
       "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\light_level.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\flappy bird\\flappy bird\\flappy bird\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\flappy bird\\trub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\trub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\flappy bird\\game_over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\game_over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\flappy bird\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\pause.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\flappy bird\\game_over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|solutionrelative:flappy bird\\game_over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{600C9317-17BF-4570-A9CD-F02067C35394}|Flappy Bird\\Flappy Bird.csproj|C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\flappy bird\\game_over.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -58,7 +58,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pause.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Pause.cs",
+              "RelativeDocumentMoniker": "Flappy Bird\\Pause.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Pause.cs",
+              "RelativeToolTip": "Flappy Bird\\Pause.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T19:07:48.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Bird.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Bird.cs",
+              "RelativeDocumentMoniker": "Flappy Bird\\Bird.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Bird.cs",
+              "RelativeToolTip": "Flappy Bird\\Bird.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T16:17:42.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Light_level.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Light_level.cs",
               "RelativeDocumentMoniker": "Flappy Bird\\Light_level.cs",
@@ -71,18 +97,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Pause.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Pause.cs",
-              "RelativeDocumentMoniker": "Flappy Bird\\Pause.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Pause.cs",
-              "RelativeToolTip": "Flappy Bird\\Pause.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T19:07:48.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Game_over.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Game_over.cs",
               "RelativeDocumentMoniker": "Flappy Bird\\Game_over.cs",
@@ -100,35 +114,22 @@
               "RelativeDocumentMoniker": "Flappy Bird\\Trub.cs",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Trub.cs",
               "RelativeToolTip": "Flappy Bird\\Trub.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwE0AAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAF4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T16:17:59.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Light_level.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Light_level.cs",
               "RelativeDocumentMoniker": "Flappy Bird\\Light_level.cs",
               "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Light_level.cs",
               "RelativeToolTip": "Flappy Bird\\Light_level.cs",
-              "ViewState": "AgIAABYBAAAAAAAAAAAmwCwBAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAowBIBAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T16:33:24.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Bird.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Bird.cs",
-              "RelativeDocumentMoniker": "Flappy Bird\\Bird.cs",
-              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Bird.cs",
-              "RelativeToolTip": "Flappy Bird\\Bird.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAlwIMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T16:17:42.499Z",
               "EditorCaption": ""
             },
             {
@@ -140,7 +141,8 @@
               "ToolTip": "C:\\Users\\ASUS\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Flappy Bird\\Flappy Bird\\Flappy Bird\\Pause.cs [Design]",
               "RelativeToolTip": "Flappy Bird\\Pause.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T19:07:46.088Z"
+              "WhenOpened": "2025-12-02T19:07:46.088Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
