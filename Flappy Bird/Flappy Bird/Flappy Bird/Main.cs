@@ -33,7 +33,7 @@ namespace Flappy_Bird
 
         private void Exit_button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

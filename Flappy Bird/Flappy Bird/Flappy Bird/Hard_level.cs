@@ -24,9 +24,17 @@ namespace Flappy_Bird
         private int score = 0;
         private int groundLevel;
         private bool Pause_game = false;
+
+        private Audio audio; // для воспроизведения аудио
+
+        // Для звука свиста
+        private int frameCount = 0;
+        private const int SwooshInterval = 100; // Каждые 100 кадров
+
         public Hard_level()
         {
             InitializeComponent();
+
             this.Focus();
             this.KeyPreview = true;
 
@@ -36,6 +44,8 @@ namespace Flappy_Bird
             this.SetStyle(ControlStyles.Selectable, true);
             this.TabStop = true;
 
+            audio = new Audio();
+
             InitializeGame();
         }
 
@@ -43,8 +53,6 @@ namespace Flappy_Bird
         {
             // Определяем уровень земли
             groundLevel = this.ClientSize.Height - 5;
-
-
 
             // Инициализируем птицу
             InitializeBird();
@@ -54,7 +62,7 @@ namespace Flappy_Bird
 
             // Настраиваем игровой таймер
             gameTimer = new Timer();
-            gameTimer.Interval = 10; // 50 кадров в секунду
+            gameTimer.Interval = 30; // 30 кадров в секунду
             gameTimer.Tick += GameTimer_Tick;
 
             // Настраиваем управление - клики мыши
@@ -68,11 +76,42 @@ namespace Flappy_Bird
                 Instruction.Click += (s, ev) => StartGame();
             }
 
-            // Настраиваем кнопку паузы
-            if (pause != null)
+            if (Pause_instruction != null)
             {
-                pause.Click += pause_Click;
+                Pause_instruction.Visible = true; // ИЗМЕНИТЕ false на true
+                Pause_instruction.Text = "Нажмите пробел или кликните чтобы прыгнуть\nESC - пауза";
+                Pause_instruction.Click += (s, ev) => StartGame();
             }
+        }
+
+        //метод - обработка клавиш
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            // Пробел - прыжок
+            if (keyData == Keys.Space)
+            {
+                if (!gameStarted)
+                {
+                    StartGame();
+                }
+                else if (gameRunning && !Pause_game)
+                {
+                    bird.Jump();
+                }
+                return true; // Клавиша обработана
+            }
+
+            // ESC - пауза
+            if (keyData == Keys.Escape)
+            {
+                if (gameStarted && gameRunning)
+                {
+                    ShowPauseForm();
+                }
+                return true; // Клавиша обработана
+            }
+
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
         private void InitializeBird()
@@ -167,6 +206,9 @@ namespace Flappy_Bird
             if (Instruction != null)
                 Instruction.Visible = false;
 
+            if (Pause_instruction != null)
+                Pause_instruction.Visible = false;
+
             // Сбрасываем птицу
             bird.Reset(150, this.ClientSize.Height / 2);
             //bird.StartAnimation();
@@ -183,6 +225,7 @@ namespace Flappy_Bird
             gameRunning = false;
             gameTimer.Stop();
             bird.StopMovement();
+            audio.PlayDie();
 
             // Показываем форму GameOver
             ShowGameOverForm();
@@ -219,11 +262,18 @@ namespace Flappy_Bird
             // Двигаем трубы
             pipes.Move();
 
+            if (frameCount % 100 == 0) // Каждые 30 кадров, проигрываем звук свиста
+            {
+                audio.PlaySwoosh();
+            }
+            frameCount++;
+
             // Проверяем, ушли ли трубы за экран
             if (pipes.IsOutOfScreen())
             {
                 pipes.Reset_Trub();
                 score++;
+                audio.PlayPoint();
 
                 // Обновляем счет
                 if (Count != null)
@@ -234,6 +284,7 @@ namespace Flappy_Bird
             if (pipes.CheckCollision(bird.GetBounds()) ||
                 bird.GetBounds().Bottom >= groundLevel)
             {
+                audio.PlayHit();
                 GameOver();
             }
 
@@ -244,12 +295,6 @@ namespace Flappy_Bird
         // ОБРАБОТКА КЛИКОВ МЫШЬЮ ПО ФОРМЕ
         private void LevelForm_MouseClick(object sender, MouseEventArgs e)
         {
-            // Проверяем, не кликнули ли по кнопке паузы
-            if (pause != null && pause.Bounds.Contains(e.Location))
-            {
-                // Клик по кнопке паузы - обработается в PauseButton_Click
-                return;
-            }
 
             // Клик по форме
             if (!gameStarted)
@@ -291,26 +336,11 @@ namespace Flappy_Bird
                 Main main = new Main();
                 main.Show();
             }
-            else
-            {
-                // Форма закрыта другим способом
-                // Можно остаться на паузе или закрыть игру
-                this.Close();
-            }
         }
-
 
         private void Hard_level_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-        }
-
-        private void pause_Click(object sender, EventArgs e)
-        {
-            if (!gameStarted) return; // Игра еще не началась
-
-            // Показываем форму паузы
-            ShowPauseForm();
         }
     }
 }

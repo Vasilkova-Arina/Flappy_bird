@@ -87,7 +87,6 @@ namespace Flappy_Bird
                 int minHeight = 50;
                 int maxHeight = level.ClientSize.Height - (int)(1.5 * pipeGap);
 
-                // Корректируем если нужно
                 if (maxHeight < minHeight + 10)
                     maxHeight = minHeight + 100;
 

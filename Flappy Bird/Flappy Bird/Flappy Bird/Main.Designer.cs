@@ -38,7 +38,7 @@ namespace Flappy_Bird
             // Exit_button
             // 
             this.Exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Exit_button.Font = new System.Drawing.Font("Segoe Marker", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Exit_button.ForeColor = System.Drawing.SystemColors.Control;
             this.Exit_button.Image = global::Flappy_Bird.Properties.Resources.fon_button;
             this.Exit_button.Location = new System.Drawing.Point(83, 275);
@@ -52,7 +52,7 @@ namespace Flappy_Bird
             // Start_button
             // 
             this.Start_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Start_button.Font = new System.Drawing.Font("Segoe Marker", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Start_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Start_button.ForeColor = System.Drawing.SystemColors.Control;
             this.Start_button.Image = global::Flappy_Bird.Properties.Resources.fon_button;
             this.Start_button.Location = new System.Drawing.Point(83, 157);
@@ -74,14 +74,15 @@ namespace Flappy_Bird
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(197)))), ((int)(((byte)(207)))));
-            this.ClientSize = new System.Drawing.Size(384, 461);
+            this.ClientSize = new System.Drawing.Size(382, 453);
             this.Controls.Add(this.Exit_button);
             this.Controls.Add(this.Start_button);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("MingLiU-ExtB", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.MaximumSize = new System.Drawing.Size(400, 500);

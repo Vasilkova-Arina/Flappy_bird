@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audio.cs" />
     <Compile Include="Bird.cs" />
     <Compile Include="Complexity.cs">
       <SubType>Form</SubType>
@@ -204,11 +205,16 @@
     <None Include="Resources\vverx_trub.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Audio\die.wav" />
+    <Content Include="Audio\hit.wav" />
+    <Content Include="Audio\point.wav" />
     <Content Include="Resources\bird_vverx.png" />
     <Content Include="Resources\redbird-downflap.png" />
     <Content Include="Resources\redbird_down.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Audio\swoosh.wav" />
+    <Content Include="Audio\wing.wav" />
     <None Include="Resources\Zemlya.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

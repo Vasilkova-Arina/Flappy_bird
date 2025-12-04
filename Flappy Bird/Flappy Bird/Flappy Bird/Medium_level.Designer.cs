@@ -29,30 +29,19 @@ namespace Flappy_Bird
         /// </summary>
         private void InitializeComponent()
         {
-            this.pause = new System.Windows.Forms.Button();
             this.Instruction = new System.Windows.Forms.PictureBox();
             this.Bird_game = new System.Windows.Forms.PictureBox();
             this.Count = new System.Windows.Forms.Label();
             this.vverx_trub = new System.Windows.Forms.PictureBox();
             this.nizxh_trub = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Pause_instruction = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pause
-            // 
-            this.pause.BackColor = System.Drawing.Color.Transparent;
-            this.pause.BackgroundImage = global::Flappy_Bird.Properties.Resources.pause1;
-            this.pause.Location = new System.Drawing.Point(824, 9);
-            this.pause.Name = "pause";
-            this.pause.Size = new System.Drawing.Size(40, 40);
-            this.pause.TabIndex = 6;
-            this.pause.UseVisualStyleBackColor = false;
-            this.pause.Click += new System.EventHandler(this.pause_Click);
             // 
             // Instruction
             // 
@@ -120,17 +109,28 @@ namespace Flappy_Bird
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
+            // Pause_instruction
+            // 
+            this.Pause_instruction.AutoSize = true;
+            this.Pause_instruction.BackColor = System.Drawing.Color.Transparent;
+            this.Pause_instruction.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pause_instruction.Location = new System.Drawing.Point(14, 31);
+            this.Pause_instruction.Name = "Pause_instruction";
+            this.Pause_instruction.Size = new System.Drawing.Size(406, 33);
+            this.Pause_instruction.TabIndex = 13;
+            this.Pause_instruction.Text = "Для паузы, нажмите ESC";
+            // 
             // Medium_level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon2;
             this.ClientSize = new System.Drawing.Size(882, 503);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.nizxh_trub);
+            this.Controls.Add(this.Pause_instruction);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Count);
             this.Controls.Add(this.vverx_trub);
-            this.Controls.Add(this.pause);
             this.Controls.Add(this.Instruction);
             this.Controls.Add(this.Bird_game);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -151,12 +151,12 @@ namespace Flappy_Bird
         }
 
         #endregion
-        private System.Windows.Forms.Button pause;
         private System.Windows.Forms.PictureBox Instruction;
         private System.Windows.Forms.PictureBox Bird_game;
         private System.Windows.Forms.Label Count;
         private System.Windows.Forms.PictureBox vverx_trub;
         private System.Windows.Forms.PictureBox nizxh_trub;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label Pause_instruction;
     }
 }
