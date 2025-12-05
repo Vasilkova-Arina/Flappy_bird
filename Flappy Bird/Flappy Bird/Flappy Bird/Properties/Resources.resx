@@ -118,47 +118,62 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fon menu-no-bg-preview (carve.photos)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fon menu-no-bg-preview (carve.photos).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fon menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fon menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Repeet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Repeet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="redbird-upflap" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redbird-upflap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fon_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fon_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Instruction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Instruction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="nizch_trub" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\nizch_trub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nizxh_trub1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\nizxh_trub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="nizxh_trub3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\nizxh_trub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Instruction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Instruction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fon_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fon_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nizxh_trub2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\nizxh_trub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fon2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vverx_trub3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\vverx_trub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\Setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nizch_trub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nizch_trub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zemlya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zemlya.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pause1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pause1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fon menu-no-bg-preview (carve.photos)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fon menu-no-bg-preview (carve.photos).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vverx_trub2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\vverx_trub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nizxh_trub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\nizxh_trub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1443321549047_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1443321549047_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Game_over" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Game_over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,19 +181,34 @@
   <data name="77c9aa39-25fd-4a7b-ba6c-c438f3a3ab14" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\77c9aa39-25fd-4a7b-ba6c-c438f3a3ab14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fon2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vverx_trub1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\vverx_trub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fon_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\fon_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1443321549047_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1443321549047_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="redbird-upflap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redbird-upflap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vverx_trub" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vverx_trub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Zemlya" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Zemlya.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\textur-gas-kvas-com-a8ke-p-teksturi-flappy-bird-11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Repeet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Repeet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fon menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fon menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vverx_trub4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\vverx_trub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

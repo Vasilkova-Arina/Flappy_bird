@@ -103,6 +103,16 @@ namespace Flappy_Bird.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fon_button1 {
+            get {
+                object obj = ResourceManager.GetObject("fon_button1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fon_menu {
             get {
                 object obj = ResourceManager.GetObject("fon menu", resourceCulture);
@@ -193,6 +203,46 @@ namespace Flappy_Bird.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap nizxh_trub {
+            get {
+                object obj = ResourceManager.GetObject("nizxh_trub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nizxh_trub1 {
+            get {
+                object obj = ResourceManager.GetObject("nizxh_trub1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nizxh_trub2 {
+            get {
+                object obj = ResourceManager.GetObject("nizxh_trub2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nizxh_trub3 {
+            get {
+                object obj = ResourceManager.GetObject("nizxh_trub3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pause1 {
             get {
                 object obj = ResourceManager.GetObject("pause1", resourceCulture);
@@ -216,6 +266,16 @@ namespace Flappy_Bird.Properties {
         internal static System.Drawing.Bitmap Repeet {
             get {
                 object obj = ResourceManager.GetObject("Repeet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Setting {
+            get {
+                object obj = ResourceManager.GetObject("Setting", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -256,6 +316,46 @@ namespace Flappy_Bird.Properties {
         internal static System.Drawing.Bitmap vverx_trub {
             get {
                 object obj = ResourceManager.GetObject("vverx_trub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vverx_trub1 {
+            get {
+                object obj = ResourceManager.GetObject("vverx_trub1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vverx_trub2 {
+            get {
+                object obj = ResourceManager.GetObject("vverx_trub2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vverx_trub3 {
+            get {
+                object obj = ResourceManager.GetObject("vverx_trub3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vverx_trub4 {
+            get {
+                object obj = ResourceManager.GetObject("vverx_trub4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -32,6 +32,7 @@ namespace Flappy_Bird
             this.label1 = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Button();
             this.Contin = new System.Windows.Forms.PictureBox();
+            this.Setting = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.Contin)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,7 +42,7 @@ namespace Flappy_Bird
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(197)))), ((int)(((byte)(207)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(191, 39);
+            this.label1.Location = new System.Drawing.Point(191, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 39);
@@ -56,8 +57,8 @@ namespace Flappy_Bird
             this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit.ForeColor = System.Drawing.Color.White;
             this.exit.Image = global::Flappy_Bird.Properties.Resources.fon_button;
-            this.exit.Location = new System.Drawing.Point(139, 268);
-            this.exit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exit.Location = new System.Drawing.Point(137, 325);
+            this.exit.Margin = new System.Windows.Forms.Padding(4);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(221, 80);
             this.exit.TabIndex = 1;
@@ -69,8 +70,8 @@ namespace Flappy_Bird
             // 
             this.Contin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(197)))), ((int)(((byte)(207)))));
             this.Contin.Image = global::Flappy_Bird.Properties.Resources.Repeet;
-            this.Contin.Location = new System.Drawing.Point(95, 105);
-            this.Contin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Contin.Location = new System.Drawing.Point(84, 132);
+            this.Contin.Margin = new System.Windows.Forms.Padding(4);
             this.Contin.Name = "Contin";
             this.Contin.Size = new System.Drawing.Size(331, 156);
             this.Contin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -78,20 +79,36 @@ namespace Flappy_Bird
             this.Contin.TabStop = false;
             this.Contin.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // Setting
+            // 
+            this.Setting.AutoSize = true;
+            this.Setting.BackColor = System.Drawing.Color.Transparent;
+            this.Setting.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Setting.ForeColor = System.Drawing.Color.White;
+            this.Setting.Location = new System.Drawing.Point(84, 72);
+            this.Setting.Name = "Setting";
+            this.Setting.Size = new System.Drawing.Size(274, 37);
+            this.Setting.TabIndex = 3;
+            this.Setting.Text = "Выключить звук";
+            this.Setting.UseVisualStyleBackColor = false;
+            this.Setting.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Pause
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon2;
             this.ClientSize = new System.Drawing.Size(509, 558);
+            this.Controls.Add(this.Setting);
             this.Controls.Add(this.Contin);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximumSize = new System.Drawing.Size(527, 605);
             this.MinimumSize = new System.Drawing.Size(527, 605);
             this.Name = "Pause";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Пауза";
             this.Load += new System.EventHandler(this.Pause_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Contin)).EndInit();
@@ -105,5 +122,6 @@ namespace Flappy_Bird
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button exit;
         private System.Windows.Forms.PictureBox Contin;
+        private System.Windows.Forms.CheckBox Setting;
     }
 }

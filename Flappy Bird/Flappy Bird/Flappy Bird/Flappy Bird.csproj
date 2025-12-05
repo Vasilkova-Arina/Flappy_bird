@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>a01096406d987a54c14d498a6b420960.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -205,9 +208,16 @@
     <None Include="Resources\vverx_trub.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="a01096406d987a54c14d498a6b420960.ico" />
     <Content Include="Audio\die.wav" />
     <Content Include="Audio\hit.wav" />
     <Content Include="Audio\point.wav" />
+    <None Include="bin\Debug\img\Setting.png" />
+    <None Include="bin\Debug\img\fon_button.png" />
+    <None Include="bin\Debug\img\vverx_trub.png" />
+    <None Include="bin\Debug\img\nizxh_trub.png" />
+    <None Include="bin\Debug\img\nizxh_trub.jpg" />
+    <None Include="bin\Debug\img\vverx_trub.jpg" />
     <Content Include="Resources\bird_vverx.png" />
     <Content Include="Resources\redbird-downflap.png" />
     <Content Include="Resources\redbird_down.png">

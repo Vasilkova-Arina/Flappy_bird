@@ -25,11 +25,8 @@ namespace Flappy_Bird
         private int groundLevel;
         private bool Pause_game = false;
 
-        private Audio audio; // для воспроизведения аудио
-
         // Для звука свиста
         private int frameCount = 0;
-        private const int SwooshInterval = 100; // Каждые 100 кадров
 
         public Medium_level()
         {
@@ -45,8 +42,6 @@ namespace Flappy_Bird
             // Устанавливаем, чтобы форма могла получать фокус
             this.SetStyle(ControlStyles.Selectable, true);
             this.TabStop = true;
-
-            audio = new Audio();
 
             InitializeGame();
         }
@@ -126,36 +121,32 @@ namespace Flappy_Bird
         private void InitializeBird()
         {
             // Создаем или загружаем изображения для птицы
-            Image birdImage1, birdImage2;
+            Image birdImage1;
 
             try
             {
                 // Пробуем загрузить изображения из файлов
                 string exePath = Application.StartupPath;
-                string path1 = Path.Combine(exePath, "redbird-downflap.png");
-                string path2 = Path.Combine(exePath, "redbird-upflap.png");
+                string path1 = Path.Combine(exePath, "redbird-upflap.png");
 
-                if (File.Exists(path1) && File.Exists(path2))
+                if (File.Exists(path1))
                 {
                     birdImage1 = Image.FromFile(path1);
-                    birdImage2 = Image.FromFile(path2);
                 }
                 else
                 {
                     // Если файлы не найдены, создаем простые изображения
                     birdImage1 = CreateSimpleBirdImage(Color.Red, false);
-                    birdImage2 = CreateSimpleBirdImage(Color.DarkRed, true);
                 }
             }
             catch
             {
                 // При любой ошибке создаем простые изображения
                 birdImage1 = CreateSimpleBirdImage(Color.Red, false);
-                birdImage2 = CreateSimpleBirdImage(Color.DarkRed, true);
             }
 
             // СОЗДАЕМ ПТИЦУ
-            bird = new Bird(Bird_game, birdImage1, birdImage2, groundLevel);
+            bird = new Bird(Bird_game, birdImage1, groundLevel);
         }
 
         // Вспомогательный метод для создания простых изображений птицы
@@ -196,6 +187,27 @@ namespace Flappy_Bird
 
         private void InitializePipes()
         {
+            // Устанавливаем родителя для прозрачности
+            if (vverx_trub != null)
+            {
+                vverx_trub.Parent = this; // Форма будет фоном
+                vverx_trub.BackColor = Color.Transparent;
+                vverx_trub.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+            if (nizxh_trub != null)
+            {
+                nizxh_trub.Parent = this; // Форма будет фоном
+                nizxh_trub.BackColor = Color.Transparent;
+                nizxh_trub.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
+            if (vverx_trub.Image != null && vverx_trub.Image.Height < 100)
+            {
+                // Увеличиваем размер PictureBox для изображения
+                vverx_trub.Height = 300; // Достаточная высота
+            }
+
             // СОЗДАЕМ ТРУБЫ
             pipes = new Trub(vverx_trub, nizxh_trub, this, Trub.DifficultyLevel.Medium);
             pipes.Reset_Trub();
@@ -233,7 +245,7 @@ namespace Flappy_Bird
             gameRunning = false;
             gameTimer.Stop();
             bird.StopMovement();
-            audio.PlayDie();
+            Audio.PlayDie();
 
             // Показываем форму GameOver
             ShowGameOverForm();
@@ -274,7 +286,7 @@ namespace Flappy_Bird
 
             if (frameCount % 100 == 0) // Каждые 30 кадров, проигрываем звук свиста
             {
-                audio.PlaySwoosh();
+                Audio.PlaySwoosh();
             }
             frameCount++;
 
@@ -283,7 +295,7 @@ namespace Flappy_Bird
             {
                 pipes.Reset_Trub();
                 score++;
-                audio.PlayPoint();
+                Audio.PlayPoint();
 
                 // Обновляем счет
                 if (Count != null)
@@ -294,7 +306,7 @@ namespace Flappy_Bird
             if (pipes.CheckCollision(bird.GetBounds()) ||
                 bird.GetBounds().Bottom >= groundLevel)
             {
-                audio.PlayHit();
+                Audio.PlayHit();
                 GameOver();
             }
 
@@ -346,6 +358,11 @@ namespace Flappy_Bird
                 Main main = new Main();
                 main.Show();
             }
+        }
+
+        private void setting_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -99,6 +99,7 @@ namespace Flappy_Bird
             this.MaximumSize = new System.Drawing.Size(394, 358);
             this.MinimumSize = new System.Drawing.Size(394, 358);
             this.Name = "Game_over";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game_over";
             this.Load += new System.EventHandler(this.Game_over_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

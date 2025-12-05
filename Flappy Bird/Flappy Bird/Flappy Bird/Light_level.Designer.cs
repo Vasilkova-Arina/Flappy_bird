@@ -35,12 +35,10 @@ namespace Flappy_Bird
             this.nizxh_trub = new System.Windows.Forms.PictureBox();
             this.Count = new System.Windows.Forms.Label();
             this.Pause_instruction = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Bird_game
@@ -68,22 +66,24 @@ namespace Flappy_Bird
             // 
             // vverx_trub
             // 
+            this.vverx_trub.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.vverx_trub.BackColor = System.Drawing.Color.Transparent;
-            this.vverx_trub.Image = global::Flappy_Bird.Properties.Resources.nizch_trub;
-            this.vverx_trub.Location = new System.Drawing.Point(629, -92);
+            this.vverx_trub.Image = global::Flappy_Bird.Properties.Resources.nizxh_trub1;
+            this.vverx_trub.Location = new System.Drawing.Point(616, -183);
             this.vverx_trub.Name = "vverx_trub";
-            this.vverx_trub.Size = new System.Drawing.Size(39, 253);
+            this.vverx_trub.Size = new System.Drawing.Size(56, 337);
             this.vverx_trub.TabIndex = 4;
             this.vverx_trub.TabStop = false;
             this.vverx_trub.Click += new System.EventHandler(this.vverx_trub_Click);
             // 
             // nizxh_trub
             // 
+            this.nizxh_trub.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.nizxh_trub.BackColor = System.Drawing.Color.Transparent;
-            this.nizxh_trub.Image = global::Flappy_Bird.Properties.Resources.vverx_trub;
-            this.nizxh_trub.Location = new System.Drawing.Point(690, 324);
+            this.nizxh_trub.Image = global::Flappy_Bird.Properties.Resources.vverx_trub2;
+            this.nizxh_trub.Location = new System.Drawing.Point(616, 318);
             this.nizxh_trub.Name = "nizxh_trub";
-            this.nizxh_trub.Size = new System.Drawing.Size(45, 206);
+            this.nizxh_trub.Size = new System.Drawing.Size(56, 278);
             this.nizxh_trub.TabIndex = 5;
             this.nizxh_trub.TabStop = false;
             // 
@@ -103,23 +103,11 @@ namespace Flappy_Bird
             this.Pause_instruction.AutoSize = true;
             this.Pause_instruction.BackColor = System.Drawing.Color.Transparent;
             this.Pause_instruction.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pause_instruction.Location = new System.Drawing.Point(18, 18);
+            this.Pause_instruction.Location = new System.Drawing.Point(14, 86);
             this.Pause_instruction.Name = "Pause_instruction";
             this.Pause_instruction.Size = new System.Drawing.Size(406, 33);
             this.Pause_instruction.TabIndex = 9;
             this.Pause_instruction.Text = "Для паузы, нажмите ESC";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::Flappy_Bird.Properties.Resources.Zemlya;
-            this.pictureBox1.Location = new System.Drawing.Point(-79, 448);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1124, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
             // 
             // Light_level
             // 
@@ -129,7 +117,6 @@ namespace Flappy_Bird
             this.ClientSize = new System.Drawing.Size(882, 503);
             this.Controls.Add(this.nizxh_trub);
             this.Controls.Add(this.Pause_instruction);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Count);
             this.Controls.Add(this.vverx_trub);
             this.Controls.Add(this.Instruction);
@@ -139,13 +126,13 @@ namespace Flappy_Bird
             this.MaximumSize = new System.Drawing.Size(900, 550);
             this.MinimumSize = new System.Drawing.Size(900, 550);
             this.Name = "Light_level";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Легкий уровень";
             this.Load += new System.EventHandler(this.Light_level_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Bird_game)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Instruction)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vverx_trub)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nizxh_trub)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +145,5 @@ namespace Flappy_Bird
         private System.Windows.Forms.PictureBox nizxh_trub;
         private System.Windows.Forms.Label Count;
         private System.Windows.Forms.Label Pause_instruction;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

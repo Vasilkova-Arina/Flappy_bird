@@ -5,26 +5,31 @@ using System.Media;
 namespace Flappy_Bird
 {
     /// <summary>
-    /// Класс для импорта звуковых файло
+    /// Статический класс для импорта звуковых файлов
     /// </summary>
-    internal class Audio
+    internal static class Audio
     {
         /// <summary>
         /// Переменные для хранения звуковых плееров.
         /// Каждая переменная отвечает за определенный звуковой эффект.
         /// </summary>
-        //Звуки
-        private SoundPlayer dieSound;      // Звук смерти (die)
-        private SoundPlayer hitSound;      // Звук удара (hit)
-        private SoundPlayer pointSound;    // Звук очков (point)
-        private SoundPlayer swooshSound;   // Звук свиста (swoosh) 
-        private SoundPlayer wingSound;     // Звук крыльев (wing) 
+        private static SoundPlayer dieSound;      // Звук смерти (die)
+        private static SoundPlayer hitSound;      // Звук удара (hit)
+        private static SoundPlayer pointSound;    // Звук очков (point)
+        private static SoundPlayer swooshSound;   // Звук свиста (swoosh) 
+        private static SoundPlayer wingSound;     // Звук крыльев (wing) 
 
         /// <summary>
-        /// Конструктор класса Audio.
+        /// Флаг для отслеживания состояния звука.
+        /// true - звук включен, false - звук выключен.
+        /// </summary>
+        private static bool isSoundEnabled = true; // Изменил на true для включенного звука по умолчанию
+
+        /// <summary>
+        /// Статический конструктор класса Audio.
         /// Инициализирует объект и загружает все звуковые файлы.
         /// </summary>
-        public Audio()
+        static Audio()
         {
             LoadSounds(); // Загружаем все звуковые файлы
         }
@@ -33,7 +38,7 @@ namespace Flappy_Bird
         /// Загружает звуковые файлы из папки с программой.
         /// Ищет файлы в подпапке "Audio" относительно исполняемого файла.
         /// </summary>
-        private void LoadSounds()
+        private static void LoadSounds()
         {
             // Получаем путь к папке, где находится программа
             string path = AppDomain.CurrentDomain.BaseDirectory;
@@ -43,6 +48,7 @@ namespace Flappy_Bird
             TryLoadSound(ref hitSound, Path.Combine(path, "Audio/hit.wav"));      // Удар
             TryLoadSound(ref pointSound, Path.Combine(path, "Audio/point.wav"));  // Очки
             TryLoadSound(ref swooshSound, Path.Combine(path, "Audio/swoosh.wav"));// Свист
+            TryLoadSound(ref wingSound, Path.Combine(path, "Audio/wing.wav"));    // Крылья
         }
 
         /// <summary>
@@ -50,7 +56,7 @@ namespace Flappy_Bird
         /// </summary>
         /// <param name="player">Ссылка на SoundPlayer, в который будет загружен звук.</param>
         /// <param name="filePath">Полный путь к звуковому файлу.</param>
-        private void TryLoadSound(ref SoundPlayer player, string filePath)
+        private static void TryLoadSound(ref SoundPlayer player, string filePath)
         {
             // Проверяем, существует ли файл
             if (File.Exists(filePath))
@@ -64,46 +70,104 @@ namespace Flappy_Bird
         /// <summary>
         /// Воспроизведение звука смерти
         /// </summary>
-        public void PlayDie()
+        public static void PlayDie()
         {
-            PlaySound(dieSound); // Воспроизводим звук смерти
+            if (isSoundEnabled) // Добавил проверку
+            {
+                PlaySound(dieSound);
+            }
         }
 
         /// <summary>
         /// Звук удара об трубу
         /// </summary>
-        public void PlayHit()
+        public static void PlayHit()
         {
-            PlaySound(hitSound); // Воспроизводим звук удара
+            if (isSoundEnabled) // Добавил проверку
+            {
+                PlaySound(hitSound);
+            }
         }
 
         /// <summary>
         /// Звук набора очков
         /// </summary>
-        public void PlayPoint()
+        public static void PlayPoint()
         {
-            PlaySound(pointSound); // Воспроизводим звук счета
+            if (isSoundEnabled) // Добавил проверку
+            {
+                PlaySound(pointSound);
+            }
         }
 
         /// <summary>
         /// Звук свиста
         /// </summary>
-        public void PlaySwoosh()
+        public static void PlaySwoosh()
         {
-            PlaySound(swooshSound); // Воспроизводим звук свиста
+            if (isSoundEnabled) // Добавил проверку
+            {
+                PlaySound(swooshSound);
+            }
+        }
+
+        /// <summary>
+        /// Звук крыльев
+        /// </summary>
+        public static void PlayWing()
+        {
+            if (isSoundEnabled && wingSound != null) // Добавил проверку
+            {
+                PlaySound(wingSound);
+            }
         }
 
         /// <summary>
         /// Общий метод для воспроизведения любого звука через SoundPlayer.
         /// </summary>
         /// <param name="player">SoundPlayer, содержащий загруженный звук.</param>
-        private void PlaySound(SoundPlayer player)
+        private static void PlaySound(SoundPlayer player)
         {
             // Проверяем, что плеер создан (звук загружен)
             if (player != null)
             {
                 player.Play(); // Воспроизводим звук один раз
             }
+        }
+
+        /// <summary>
+        /// Включает воспроизведение звуковых эффектов.
+        /// </summary>
+        public static void EnableSound()
+        {
+            isSoundEnabled = true;
+        }
+
+        /// <summary>
+        /// Выключает воспроизведение звуковых эффектов.
+        /// </summary>
+        public static void DisableSound()
+        {
+            isSoundEnabled = false;
+        }
+
+        /// <summary>
+        /// Получает текущее состояние звука.
+        /// </summary>
+        /// <returns>true - звук включен, false - звук выключен</returns>
+        public static bool IsSoundEnabled()
+        {
+            return isSoundEnabled;
+        }
+
+        /// <summary>
+        /// Переключает состояние звука.
+        /// </summary>
+        /// <returns>Новое состояние звука</returns>
+        public static bool ToggleSound()
+        {
+            isSoundEnabled = !isSoundEnabled;
+            return isSoundEnabled;
         }
     }
 }

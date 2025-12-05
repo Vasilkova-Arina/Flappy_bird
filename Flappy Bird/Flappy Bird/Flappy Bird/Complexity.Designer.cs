@@ -41,9 +41,9 @@ namespace Flappy_Bird
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(197)))), ((int)(((byte)(207)))));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(317, 25);
+            this.label1.Location = new System.Drawing.Point(267, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 31);
+            this.label1.Size = new System.Drawing.Size(357, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "Select difficulty level!";
             // 
@@ -52,7 +52,7 @@ namespace Flappy_Bird
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = global::Flappy_Bird.Properties.Resources.fon_button;
-            this.button4.Location = new System.Drawing.Point(323, 355);
+            this.button4.Location = new System.Drawing.Point(323, 309);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(222, 68);
             this.button4.TabIndex = 2;
@@ -65,7 +65,7 @@ namespace Flappy_Bird
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::Flappy_Bird.Properties.Resources.fon_button;
-            this.button3.Location = new System.Drawing.Point(323, 262);
+            this.button3.Location = new System.Drawing.Point(323, 224);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 68);
             this.button3.TabIndex = 2;
@@ -78,7 +78,7 @@ namespace Flappy_Bird
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::Flappy_Bird.Properties.Resources.fon_button;
-            this.button2.Location = new System.Drawing.Point(323, 165);
+            this.button2.Location = new System.Drawing.Point(323, 136);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(222, 68);
             this.button2.TabIndex = 2;
@@ -91,7 +91,7 @@ namespace Flappy_Bird
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Flappy_Bird.Properties.Resources.fon_button;
-            this.button1.Location = new System.Drawing.Point(323, 70);
+            this.button1.Location = new System.Drawing.Point(323, 51);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(222, 68);
             this.button1.TabIndex = 2;
@@ -101,21 +101,22 @@ namespace Flappy_Bird
             // 
             // Complexity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(21F, 39F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Flappy_Bird.Properties.Resources.fon2;
-            this.ClientSize = new System.Drawing.Size(884, 457);
+            this.ClientSize = new System.Drawing.Size(882, 403);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Font = new System.Drawing.Font("Segoe Marker", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(7);
-            this.MaximumSize = new System.Drawing.Size(900, 496);
-            this.MinimumSize = new System.Drawing.Size(900, 496);
+            this.MaximumSize = new System.Drawing.Size(900, 450);
+            this.MinimumSize = new System.Drawing.Size(900, 450);
             this.Name = "Complexity";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Выбор сложности";
             this.Load += new System.EventHandler(this.Complexity_Load);
             this.ResumeLayout(false);
